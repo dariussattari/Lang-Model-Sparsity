@@ -1,0 +1,7 @@
+torch>=2.3
+transformers>=4.47
+accelerate
+pillow
+# only needed for --camera mode:
+opencv-python
+optimum-quanto

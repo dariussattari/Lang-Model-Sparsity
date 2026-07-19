@@ -1,0 +1,4 @@
+run,quant,footprint_gb,hit_rate,avg_latency_s,mean_iou_vs_ref,mean_drift_px_vs_ref,missed_vs_ref
+fp16_baseline,none,7.115,0.941,4.319,-,-,-
+int4_quanto,int4,4.224,1.0,23.598,0.722,52.0,0
+int8_quanto,int8,4.138,0.941,16.765,0.859,33.3,0

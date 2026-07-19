@@ -1,0 +1,699 @@
+{
+  "meta": {
+    "video": "/Users/dariussattari/Desktop/Screen Recording 2026-07-10 at 5.43.10\u202fPM.mov",
+    "model": "google/paligemma2-3b-mix-448",
+    "quant": "int4",
+    "model_footprint_gb": 3.446,
+    "device": "mps",
+    "classes": [
+      "quadcopter"
+    ],
+    "fps": 24.87,
+    "resolution": [
+      506,
+      894
+    ],
+    "detect_every_s": 1.0,
+    "run_started_utc": "2026-07-11T19:06:21Z"
+  },
+  "summary": {
+    "n_passes": 34,
+    "n_passes_with_detections": 31,
+    "n_detections": 31,
+    "avg_latency_s": 13.422
+  },
+  "passes": [
+    {
+      "pass": 0,
+      "frame": 0,
+      "timestamp_s": 0.0,
+      "latency_s": 22.038,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            154.7,
+            399.0,
+            504.5,
+            557.0
+          ],
+          "centroid": [
+            329.6,
+            478.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "frame": 25,
+      "timestamp_s": 1.005,
+      "latency_s": 17.618,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            154.7,
+            399.0,
+            505.0,
+            557.0
+          ],
+          "centroid": [
+            329.8,
+            478.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 2,
+      "frame": 50,
+      "timestamp_s": 2.01,
+      "latency_s": 16.964,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            154.7,
+            399.0,
+            505.0,
+            557.0
+          ],
+          "centroid": [
+            329.8,
+            478.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 3,
+      "frame": 75,
+      "timestamp_s": 3.015,
+      "latency_s": 16.439,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            154.7,
+            399.0,
+            505.0,
+            557.0
+          ],
+          "centroid": [
+            329.8,
+            478.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 4,
+      "frame": 100,
+      "timestamp_s": 4.02,
+      "latency_s": 17.104,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            154.7,
+            399.0,
+            505.0,
+            557.0
+          ],
+          "centroid": [
+            329.8,
+            478.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 5,
+      "frame": 125,
+      "timestamp_s": 5.025,
+      "latency_s": 16.879,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            402.5,
+            504.5,
+            830.3
+          ],
+          "centroid": [
+            252.3,
+            616.4
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 6,
+      "frame": 150,
+      "timestamp_s": 6.03,
+      "latency_s": 15.527,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            408.6,
+            504.5,
+            850.3
+          ],
+          "centroid": [
+            252.3,
+            629.5
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 7,
+      "frame": 175,
+      "timestamp_s": 7.036,
+      "latency_s": 12.131,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            148.7,
+            449.6,
+            504.5,
+            592.8
+          ],
+          "centroid": [
+            326.6,
+            521.2
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 8,
+      "frame": 200,
+      "timestamp_s": 8.041,
+      "latency_s": 7.68,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            138.9,
+            463.6,
+            504.5,
+            583.2
+          ],
+          "centroid": [
+            321.7,
+            523.4
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 9,
+      "frame": 225,
+      "timestamp_s": 9.046,
+      "latency_s": 12.64,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            178.4,
+            457.5,
+            504.5,
+            564.0
+          ],
+          "centroid": [
+            341.5,
+            510.7
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 10,
+      "frame": 250,
+      "timestamp_s": 10.051,
+      "latency_s": 13.765,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            201.1,
+            425.2,
+            488.7,
+            557.0
+          ],
+          "centroid": [
+            344.9,
+            491.1
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 11,
+      "frame": 275,
+      "timestamp_s": 11.056,
+      "latency_s": 14.461,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            191.7,
+            457.5,
+            477.8,
+            522.1
+          ],
+          "centroid": [
+            334.8,
+            489.8
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 12,
+      "frame": 300,
+      "timestamp_s": 12.061,
+      "latency_s": 13.776,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            248.6,
+            431.3,
+            504.5,
+            499.4
+          ],
+          "centroid": [
+            376.5,
+            465.3
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 13,
+      "frame": 325,
+      "timestamp_s": 13.066,
+      "latency_s": 14.469,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            245.6,
+            232.2,
+            472.9,
+            350.1
+          ],
+          "centroid": [
+            359.2,
+            291.2
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 14,
+      "frame": 350,
+      "timestamp_s": 14.071,
+      "latency_s": 14.109,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            237.2,
+            211.3,
+            445.2,
+            327.4
+          ],
+          "centroid": [
+            341.2,
+            269.3
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 15,
+      "frame": 375,
+      "timestamp_s": 15.076,
+      "latency_s": 14.012,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            217.9,
+            287.2,
+            351.8,
+            363.2
+          ],
+          "centroid": [
+            284.9,
+            325.2
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 16,
+      "frame": 400,
+      "timestamp_s": 16.081,
+      "latency_s": 13.257,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            224.8,
+            378.0,
+            294.0,
+            416.4
+          ],
+          "centroid": [
+            259.4,
+            397.2
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 17,
+      "frame": 425,
+      "timestamp_s": 17.086,
+      "latency_s": 14.525,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            235.7,
+            416.4,
+            280.2,
+            435.7
+          ],
+          "centroid": [
+            257.9,
+            426.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 18,
+      "frame": 450,
+      "timestamp_s": 18.091,
+      "latency_s": 13.419,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            240.6,
+            423.4,
+            275.7,
+            440.0
+          ],
+          "centroid": [
+            258.2,
+            431.7
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 19,
+      "frame": 475,
+      "timestamp_s": 19.096,
+      "latency_s": 14.996,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            167.0,
+            525.6,
+            367.1,
+            742.1
+          ],
+          "centroid": [
+            267.1,
+            633.8
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 20,
+      "frame": 500,
+      "timestamp_s": 20.102,
+      "latency_s": 14.457,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            408.6,
+            504.5,
+            820.7
+          ],
+          "centroid": [
+            252.3,
+            614.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 21,
+      "frame": 525,
+      "timestamp_s": 21.107,
+      "latency_s": 13.177,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            408.6,
+            504.5,
+            828.5
+          ],
+          "centroid": [
+            252.3,
+            618.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 22,
+      "frame": 550,
+      "timestamp_s": 22.112,
+      "latency_s": 14.44,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            413.0,
+            504.5,
+            820.7
+          ],
+          "centroid": [
+            252.3,
+            616.8
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 23,
+      "frame": 575,
+      "timestamp_s": 23.117,
+      "latency_s": 13.666,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            295.1,
+            386.4,
+            601.5
+          ],
+          "centroid": [
+            193.2,
+            448.3
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 24,
+      "frame": 600,
+      "timestamp_s": 24.122,
+      "latency_s": 3.612,
+      "detections": []
+    },
+    {
+      "pass": 25,
+      "frame": 625,
+      "timestamp_s": 25.127,
+      "latency_s": 13.787,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            402.5,
+            505.5,
+            808.4
+          ],
+          "centroid": [
+            252.8,
+            605.5
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 26,
+      "frame": 650,
+      "timestamp_s": 26.132,
+      "latency_s": 3.064,
+      "detections": []
+    },
+    {
+      "pass": 27,
+      "frame": 675,
+      "timestamp_s": 27.137,
+      "latency_s": 3.001,
+      "detections": []
+    },
+    {
+      "pass": 28,
+      "frame": 700,
+      "timestamp_s": 28.142,
+      "latency_s": 12.997,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            253.5,
+            457.5,
+            505.5,
+            777.9
+          ],
+          "centroid": [
+            379.5,
+            617.7
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 29,
+      "frame": 725,
+      "timestamp_s": 29.147,
+      "latency_s": 13.559,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            17.3,
+            411.2,
+            504.5,
+            820.7
+          ],
+          "centroid": [
+            260.9,
+            615.9
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 30,
+      "frame": 750,
+      "timestamp_s": 30.152,
+      "latency_s": 13.417,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            411.2,
+            504.5,
+            820.7
+          ],
+          "centroid": [
+            252.3,
+            615.9
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 31,
+      "frame": 775,
+      "timestamp_s": 31.157,
+      "latency_s": 14.009,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            408.6,
+            504.5,
+            820.7
+          ],
+          "centroid": [
+            252.3,
+            614.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 32,
+      "frame": 800,
+      "timestamp_s": 32.162,
+      "latency_s": 13.571,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            410.3,
+            504.5,
+            820.7
+          ],
+          "centroid": [
+            252.3,
+            615.5
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 33,
+      "frame": 825,
+      "timestamp_s": 33.168,
+      "latency_s": 13.785,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            0.0,
+            408.6,
+            504.5,
+            820.7
+          ],
+          "centroid": [
+            252.3,
+            614.6
+          ]
+        }
+      ]
+    }
+  ]
+}

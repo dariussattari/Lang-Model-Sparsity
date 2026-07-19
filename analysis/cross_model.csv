@@ -1,0 +1,7 @@
+model,quant,size_gb,hit_rate,latency_s,delta_size_vs_fp16,delta_latency_vs_fp16
+paligemma,none,5.65,0.941,1.132,-,-
+paligemma,int8,3.38,0.941,3.031,-40%,+168%
+paligemma,int4,3.446,0.912,13.422,-39%,+1086%
+locateanything,none,7.115,0.941,4.319,-,-
+locateanything,int8,4.138,0.941,16.765,-42%,+288%
+locateanything,int4,4.224,1.0,23.598,-41%,+446%

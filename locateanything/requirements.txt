@@ -1,0 +1,13 @@
+# LocateAnything-3B pins transformers 4.57.x and needs trust_remote_code deps.
+# Kept in its OWN venv, separate from the PaliGemma demo (transformers 5.x).
+torch>=2.3
+transformers==4.57.1
+accelerate
+pillow
+numpy
+opencv-python
+optimum-quanto
+ninja            # required for quanto int4 unpack kernel (JIT-compiled)
+# deps imported by NVIDIA's remote modeling/processor code:
+peft
+torchvision

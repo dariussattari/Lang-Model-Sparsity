@@ -1,0 +1,16 @@
+{
+  "reference": "paligemma/runs/fp16_baseline/Screen_Recording_2026-07-10_at_5.43.10_PM_results.json",
+  "candidate": "paligemma/runs/int4_quanto/Screen_Recording_2026-07-10_at_5.43.10_PM_results.json",
+  "reference_footprint_gb": 5.65,
+  "candidate_footprint_gb": 3.446,
+  "reference_avg_latency_s": 1.132,
+  "candidate_avg_latency_s": 13.422,
+  "reference_hit_rate": 0.941,
+  "candidate_hit_rate": 0.912,
+  "shared_passes": 34,
+  "both_detected": 31,
+  "only_reference": 1,
+  "only_candidate": 0,
+  "mean_iou": 0.833,
+  "mean_centroid_drift_px": 26.5
+}
