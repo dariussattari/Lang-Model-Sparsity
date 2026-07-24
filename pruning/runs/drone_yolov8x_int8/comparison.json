@@ -1,0 +1,16 @@
+{
+  "reference": "pruning/runs/drone_yolov8x_fp16/quadcopter_results.json",
+  "candidate": "pruning/runs/drone_yolov8x_int8/quadcopter_results.json",
+  "reference_footprint_gb": 0.2541,
+  "candidate_footprint_gb": 0.064,
+  "reference_avg_latency_s": 0.0479,
+  "candidate_avg_latency_s": 0.0714,
+  "reference_hit_rate": 0.824,
+  "candidate_hit_rate": 1.0,
+  "shared_passes": 34,
+  "both_detected": 28,
+  "only_reference": 0,
+  "only_candidate": 6,
+  "mean_iou": 0.259,
+  "mean_centroid_drift_px": 222.7
+}

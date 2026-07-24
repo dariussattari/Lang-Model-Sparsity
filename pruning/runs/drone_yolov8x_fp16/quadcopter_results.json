@@ -1,0 +1,714 @@
+{
+  "meta": {
+    "model": "drone_yolov8x.pt",
+    "quant": "none",
+    "model_footprint_gb": 0.2541,
+    "device": "mps",
+    "classes": [
+      "drone"
+    ],
+    "quantized_layers": 0,
+    "conf_threshold": 0.25,
+    "pruning": {
+      "target_channel_ratio": 0.0
+    },
+    "video": "quadcopter.mov",
+    "fps": 24.87,
+    "resolution": [
+      506,
+      894
+    ],
+    "detect_every_s": 1.0,
+    "run_started_utc": "2026-07-24T18:15:15Z"
+  },
+  "summary": {
+    "n_passes": 34,
+    "n_passes_with_detections": 28,
+    "n_detections": 32,
+    "avg_latency_s": 0.0479
+  },
+  "passes": [
+    {
+      "pass": 0,
+      "frame": 0,
+      "timestamp_s": 0.0,
+      "latency_s": 0.0472,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            120.3,
+            396.2,
+            501.7,
+            829.9
+          ],
+          "centroid": [
+            311.0,
+            613.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "frame": 25,
+      "timestamp_s": 1.005,
+      "latency_s": 0.0472,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            117.9,
+            395.2,
+            502.2,
+            826.2
+          ],
+          "centroid": [
+            310.0,
+            610.7
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 2,
+      "frame": 50,
+      "timestamp_s": 2.01,
+      "latency_s": 0.0463,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            117.8,
+            395.4,
+            502.2,
+            826.2
+          ],
+          "centroid": [
+            310.0,
+            610.8
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 3,
+      "frame": 75,
+      "timestamp_s": 3.015,
+      "latency_s": 0.0469,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            119.1,
+            396.6,
+            502.5,
+            824.7
+          ],
+          "centroid": [
+            310.8,
+            610.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 4,
+      "frame": 100,
+      "timestamp_s": 4.02,
+      "latency_s": 0.0473,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            119.2,
+            396.6,
+            502.5,
+            824.7
+          ],
+          "centroid": [
+            310.9,
+            610.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 5,
+      "frame": 125,
+      "timestamp_s": 5.025,
+      "latency_s": 0.0513,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            120.6,
+            401.6,
+            500.8,
+            812.9
+          ],
+          "centroid": [
+            310.7,
+            607.2
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 6,
+      "frame": 150,
+      "timestamp_s": 6.03,
+      "latency_s": 0.0466,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            111.2,
+            401.6,
+            498.9,
+            837.4
+          ],
+          "centroid": [
+            305.0,
+            619.5
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 7,
+      "frame": 175,
+      "timestamp_s": 7.036,
+      "latency_s": 0.0504,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            116.4,
+            444.0,
+            487.1,
+            882.3
+          ],
+          "centroid": [
+            301.7,
+            663.1
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 8,
+      "frame": 200,
+      "timestamp_s": 8.041,
+      "latency_s": 0.0506,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            140.6,
+            449.9,
+            482.3,
+            655.7
+          ],
+          "centroid": [
+            311.4,
+            552.8
+          ]
+        },
+        {
+          "label": "drone",
+          "box": [
+            132.1,
+            446.0,
+            475.3,
+            880.3
+          ],
+          "centroid": [
+            303.7,
+            663.1
+          ]
+        },
+        {
+          "label": "drone",
+          "box": [
+            136.2,
+            449.0,
+            481.0,
+            745.4
+          ],
+          "centroid": [
+            308.6,
+            597.2
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 9,
+      "frame": 225,
+      "timestamp_s": 9.046,
+      "latency_s": 0.0513,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            152.5,
+            441.0,
+            492.6,
+            883.4
+          ],
+          "centroid": [
+            322.5,
+            662.2
+          ]
+        },
+        {
+          "label": "drone",
+          "box": [
+            161.6,
+            447.7,
+            506.0,
+            573.4
+          ],
+          "centroid": [
+            333.8,
+            510.5
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 10,
+      "frame": 250,
+      "timestamp_s": 10.051,
+      "latency_s": 0.0508,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            192.4,
+            413.5,
+            500.5,
+            586.1
+          ],
+          "centroid": [
+            346.4,
+            499.8
+          ]
+        },
+        {
+          "label": "drone",
+          "box": [
+            142.4,
+            410.2,
+            502.9,
+            836.5
+          ],
+          "centroid": [
+            322.7,
+            623.4
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 11,
+      "frame": 275,
+      "timestamp_s": 11.056,
+      "latency_s": 0.0458,
+      "detections": []
+    },
+    {
+      "pass": 12,
+      "frame": 300,
+      "timestamp_s": 12.061,
+      "latency_s": 0.0508,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            220.1,
+            419.6,
+            498.9,
+            524.5
+          ],
+          "centroid": [
+            359.5,
+            472.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 13,
+      "frame": 325,
+      "timestamp_s": 13.066,
+      "latency_s": 0.0503,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            208.0,
+            222.3,
+            488.2,
+            349.4
+          ],
+          "centroid": [
+            348.1,
+            285.9
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 14,
+      "frame": 350,
+      "timestamp_s": 14.071,
+      "latency_s": 0.0524,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            214.9,
+            203.5,
+            464.1,
+            328.8
+          ],
+          "centroid": [
+            339.5,
+            266.1
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 15,
+      "frame": 375,
+      "timestamp_s": 15.076,
+      "latency_s": 0.0465,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            204.9,
+            274.3,
+            366.8,
+            365.4
+          ],
+          "centroid": [
+            285.9,
+            319.8
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 16,
+      "frame": 400,
+      "timestamp_s": 16.081,
+      "latency_s": 0.0509,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            215.9,
+            376.5,
+            305.5,
+            417.8
+          ],
+          "centroid": [
+            260.7,
+            397.2
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 17,
+      "frame": 425,
+      "timestamp_s": 17.086,
+      "latency_s": 0.0456,
+      "detections": []
+    },
+    {
+      "pass": 18,
+      "frame": 450,
+      "timestamp_s": 18.091,
+      "latency_s": 0.0461,
+      "detections": []
+    },
+    {
+      "pass": 19,
+      "frame": 475,
+      "timestamp_s": 19.096,
+      "latency_s": 0.046,
+      "detections": []
+    },
+    {
+      "pass": 20,
+      "frame": 500,
+      "timestamp_s": 20.102,
+      "latency_s": 0.0467,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            118.9,
+            401.4,
+            501.6,
+            814.5
+          ],
+          "centroid": [
+            310.2,
+            607.9
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 21,
+      "frame": 525,
+      "timestamp_s": 21.107,
+      "latency_s": 0.0469,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            118.9,
+            401.8,
+            501.4,
+            813.9
+          ],
+          "centroid": [
+            310.2,
+            607.9
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 22,
+      "frame": 550,
+      "timestamp_s": 22.112,
+      "latency_s": 0.0466,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            119.1,
+            403.8,
+            502.4,
+            816.1
+          ],
+          "centroid": [
+            310.8,
+            610.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 23,
+      "frame": 575,
+      "timestamp_s": 23.117,
+      "latency_s": 0.0475,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            81.8,
+            278.9,
+            400.2,
+            677.9
+          ],
+          "centroid": [
+            241.0,
+            478.4
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 24,
+      "frame": 600,
+      "timestamp_s": 24.122,
+      "latency_s": 0.0455,
+      "detections": []
+    },
+    {
+      "pass": 25,
+      "frame": 625,
+      "timestamp_s": 25.127,
+      "latency_s": 0.0463,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            117.0,
+            393.8,
+            506.0,
+            809.9
+          ],
+          "centroid": [
+            311.5,
+            601.8
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 26,
+      "frame": 650,
+      "timestamp_s": 26.132,
+      "latency_s": 0.048,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            104.3,
+            387.6,
+            499.5,
+            833.1
+          ],
+          "centroid": [
+            301.9,
+            610.4
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 27,
+      "frame": 675,
+      "timestamp_s": 27.137,
+      "latency_s": 0.046,
+      "detections": []
+    },
+    {
+      "pass": 28,
+      "frame": 700,
+      "timestamp_s": 28.142,
+      "latency_s": 0.0504,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            337.4,
+            458.3,
+            506.0,
+            836.8
+          ],
+          "centroid": [
+            421.7,
+            647.5
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 29,
+      "frame": 725,
+      "timestamp_s": 29.147,
+      "latency_s": 0.0475,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            126.6,
+            401.8,
+            504.9,
+            820.4
+          ],
+          "centroid": [
+            315.7,
+            611.1
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 30,
+      "frame": 750,
+      "timestamp_s": 30.152,
+      "latency_s": 0.0476,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            119.3,
+            401.9,
+            501.7,
+            814.2
+          ],
+          "centroid": [
+            310.5,
+            608.1
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 31,
+      "frame": 775,
+      "timestamp_s": 31.157,
+      "latency_s": 0.0463,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            119.3,
+            402.2,
+            501.6,
+            813.9
+          ],
+          "centroid": [
+            310.5,
+            608.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 32,
+      "frame": 800,
+      "timestamp_s": 32.162,
+      "latency_s": 0.0467,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            118.7,
+            400.9,
+            501.4,
+            816.6
+          ],
+          "centroid": [
+            310.1,
+            608.7
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 33,
+      "frame": 825,
+      "timestamp_s": 33.168,
+      "latency_s": 0.0465,
+      "detections": [
+        {
+          "label": "drone",
+          "box": [
+            119.1,
+            401.7,
+            504.0,
+            814.7
+          ],
+          "centroid": [
+            311.5,
+            608.2
+          ]
+        }
+      ]
+    }
+  ]
+}

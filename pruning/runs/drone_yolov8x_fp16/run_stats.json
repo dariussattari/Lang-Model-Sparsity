@@ -1,0 +1,11 @@
+{
+  "run_name": "drone_yolov8x_fp16",
+  "ratio": 0.0,
+  "quant": "none",
+  "footprint_gb": 0.2541,
+  "n_passes": 34,
+  "hit": 28,
+  "hit_rate": 0.824,
+  "avg_latency_s": 0.0479,
+  "pruning": null
+}

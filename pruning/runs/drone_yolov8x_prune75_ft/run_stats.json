@@ -1,0 +1,23 @@
+{
+  "run_name": "drone_yolov8x_prune75_ft",
+  "ratio": 0.75,
+  "quant": "none",
+  "recovered": true,
+  "epochs": 60,
+  "footprint_gb": 0.0308,
+  "n_passes": 34,
+  "hit": 24,
+  "hit_rate": 0.706,
+  "avg_latency_s": 0.014,
+  "pruning": {
+    "target_channel_ratio": 0.75,
+    "iterative_steps": 1,
+    "params_before": 68153571,
+    "params_after": 8238771,
+    "params_reduction_pct": 87.9,
+    "macs_before": 128879035600,
+    "macs_after": 21215323600,
+    "macs_reduction_pct": 83.5,
+    "weights_mb": 31.84
+  }
+}

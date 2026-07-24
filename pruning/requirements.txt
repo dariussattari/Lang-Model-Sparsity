@@ -1,0 +1,11 @@
+# Structured-pruning experiment. Own venv (arm64), like the other model dirs.
+# Build with: uv venv --python cpython-3.12-macos-aarch64-none .venv
+ultralytics>=8.3
+torch>=2.3
+torch-pruning>=1.6      # DepGraph structured pruning
+opencv-python
+pillow
+numpy
+optimum-quanto          # int8/int4 combo, portable to MPS
+ninja                   # quanto int4 JIT kernel
+matplotlib              # comparison chart
