@@ -1,0 +1,295 @@
+{
+  "meta": {
+    "model": "yolov8s-worldv2.pt",
+    "quant": "none",
+    "model_footprint_gb": 0.6112,
+    "device": "mps",
+    "classes": [
+      "quadcopter"
+    ],
+    "quantized_layers": 0,
+    "conf_threshold": 0.25,
+    "video": "/Users/dariussattari/Desktop/Screen Recording 2026-07-10 at 5.43.10\u202fPM.mov",
+    "fps": 24.87,
+    "resolution": [
+      506,
+      894
+    ],
+    "detect_every_s": 1.0,
+    "run_started_utc": "2026-07-24T14:27:15Z"
+  },
+  "summary": {
+    "n_passes": 34,
+    "n_passes_with_detections": 2,
+    "n_detections": 2,
+    "avg_latency_s": 0.0281
+  },
+  "passes": [
+    {
+      "pass": 0,
+      "frame": 0,
+      "timestamp_s": 0.0,
+      "latency_s": 0.3611,
+      "detections": []
+    },
+    {
+      "pass": 1,
+      "frame": 25,
+      "timestamp_s": 1.005,
+      "latency_s": 0.029,
+      "detections": []
+    },
+    {
+      "pass": 2,
+      "frame": 50,
+      "timestamp_s": 2.01,
+      "latency_s": 0.0178,
+      "detections": []
+    },
+    {
+      "pass": 3,
+      "frame": 75,
+      "timestamp_s": 3.015,
+      "latency_s": 0.0144,
+      "detections": []
+    },
+    {
+      "pass": 4,
+      "frame": 100,
+      "timestamp_s": 4.02,
+      "latency_s": 0.0133,
+      "detections": []
+    },
+    {
+      "pass": 5,
+      "frame": 125,
+      "timestamp_s": 5.025,
+      "latency_s": 0.0119,
+      "detections": []
+    },
+    {
+      "pass": 6,
+      "frame": 150,
+      "timestamp_s": 6.03,
+      "latency_s": 0.012,
+      "detections": []
+    },
+    {
+      "pass": 7,
+      "frame": 175,
+      "timestamp_s": 7.036,
+      "latency_s": 0.0126,
+      "detections": []
+    },
+    {
+      "pass": 8,
+      "frame": 200,
+      "timestamp_s": 8.041,
+      "latency_s": 0.0114,
+      "detections": []
+    },
+    {
+      "pass": 9,
+      "frame": 225,
+      "timestamp_s": 9.046,
+      "latency_s": 0.013,
+      "detections": []
+    },
+    {
+      "pass": 10,
+      "frame": 250,
+      "timestamp_s": 10.051,
+      "latency_s": 0.0118,
+      "detections": []
+    },
+    {
+      "pass": 11,
+      "frame": 275,
+      "timestamp_s": 11.056,
+      "latency_s": 0.012,
+      "detections": []
+    },
+    {
+      "pass": 12,
+      "frame": 300,
+      "timestamp_s": 12.061,
+      "latency_s": 0.0121,
+      "detections": []
+    },
+    {
+      "pass": 13,
+      "frame": 325,
+      "timestamp_s": 13.066,
+      "latency_s": 0.012,
+      "detections": []
+    },
+    {
+      "pass": 14,
+      "frame": 350,
+      "timestamp_s": 14.071,
+      "latency_s": 0.0115,
+      "detections": []
+    },
+    {
+      "pass": 15,
+      "frame": 375,
+      "timestamp_s": 15.076,
+      "latency_s": 0.0613,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            217.7,
+            285.2,
+            358.2,
+            365.6
+          ],
+          "centroid": [
+            287.9,
+            325.4
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 16,
+      "frame": 400,
+      "timestamp_s": 16.081,
+      "latency_s": 0.1173,
+      "detections": [
+        {
+          "label": "quadcopter",
+          "box": [
+            221.7,
+            374.6,
+            304.8,
+            417.1
+          ],
+          "centroid": [
+            263.2,
+            395.8
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 17,
+      "frame": 425,
+      "timestamp_s": 17.086,
+      "latency_s": 0.0295,
+      "detections": []
+    },
+    {
+      "pass": 18,
+      "frame": 450,
+      "timestamp_s": 18.091,
+      "latency_s": 0.0151,
+      "detections": []
+    },
+    {
+      "pass": 19,
+      "frame": 475,
+      "timestamp_s": 19.096,
+      "latency_s": 0.0125,
+      "detections": []
+    },
+    {
+      "pass": 20,
+      "frame": 500,
+      "timestamp_s": 20.102,
+      "latency_s": 0.0115,
+      "detections": []
+    },
+    {
+      "pass": 21,
+      "frame": 525,
+      "timestamp_s": 21.107,
+      "latency_s": 0.0113,
+      "detections": []
+    },
+    {
+      "pass": 22,
+      "frame": 550,
+      "timestamp_s": 22.112,
+      "latency_s": 0.0112,
+      "detections": []
+    },
+    {
+      "pass": 23,
+      "frame": 575,
+      "timestamp_s": 23.117,
+      "latency_s": 0.0117,
+      "detections": []
+    },
+    {
+      "pass": 24,
+      "frame": 600,
+      "timestamp_s": 24.122,
+      "latency_s": 0.012,
+      "detections": []
+    },
+    {
+      "pass": 25,
+      "frame": 625,
+      "timestamp_s": 25.127,
+      "latency_s": 0.0114,
+      "detections": []
+    },
+    {
+      "pass": 26,
+      "frame": 650,
+      "timestamp_s": 26.132,
+      "latency_s": 0.0116,
+      "detections": []
+    },
+    {
+      "pass": 27,
+      "frame": 675,
+      "timestamp_s": 27.137,
+      "latency_s": 0.0115,
+      "detections": []
+    },
+    {
+      "pass": 28,
+      "frame": 700,
+      "timestamp_s": 28.142,
+      "latency_s": 0.0129,
+      "detections": []
+    },
+    {
+      "pass": 29,
+      "frame": 725,
+      "timestamp_s": 29.147,
+      "latency_s": 0.0123,
+      "detections": []
+    },
+    {
+      "pass": 30,
+      "frame": 750,
+      "timestamp_s": 30.152,
+      "latency_s": 0.0115,
+      "detections": []
+    },
+    {
+      "pass": 31,
+      "frame": 775,
+      "timestamp_s": 31.157,
+      "latency_s": 0.0115,
+      "detections": []
+    },
+    {
+      "pass": 32,
+      "frame": 800,
+      "timestamp_s": 32.162,
+      "latency_s": 0.0113,
+      "detections": []
+    },
+    {
+      "pass": 33,
+      "frame": 825,
+      "timestamp_s": 33.168,
+      "latency_s": 0.0117,
+      "detections": []
+    }
+  ]
+}

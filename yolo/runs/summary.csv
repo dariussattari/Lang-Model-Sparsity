@@ -1,0 +1,5 @@
+run,quant,footprint_gb,hit_rate,avg_latency_s,mean_iou_vs_ref,mean_drift_px_vs_ref,missed_vs_ref
+yolo11n_fp16,none,0.0098,0.941,0.0414,-,-,-
+yolov8s-worldv2_fp16,none,0.6112,0.059,0.0281,-,-,-
+yolo11n_int4,int4,0.0027,0.0,0.1866,,,32
+yolo11n_int8,int8,0.0026,0.0,0.0322,,,32

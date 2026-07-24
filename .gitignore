@@ -1,0 +1,25 @@
+# Python venvs (per-model, hundreds of MB to GB each)
+*/.venv/
+.venv/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Model weights (auto-downloaded by runners; not source)
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Temp / scratch from probing
+frame*.jpg
+probe*.py
+yolo/detections/
+
+# Regenerable annotated videos (the results JSON/CSV are the real artifacts)
+*_annotated.mp4
+
+# OS cruft
+.DS_Store

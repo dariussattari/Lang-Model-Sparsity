@@ -1,0 +1,9 @@
+# CNN detectors (YOLO family) via ultralytics. Own venv, like the other models.
+ultralytics>=8.3
+torch>=2.3
+opencv-python
+pillow
+numpy
+optimum-quanto
+ninja
+git+https://github.com/ultralytics/CLIP.git

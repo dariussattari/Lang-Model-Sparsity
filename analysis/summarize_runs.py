@@ -75,7 +75,11 @@ def row_for(name, data, ref_name, ref_data):
         "mean_drift_px_vs_ref": "-",
         "missed_vs_ref": "-",
     }
-    if name != ref_name:
+    # IoU/drift vs ref only make sense within the same model AND same classes
+    # (comparing quant levels of one detector), not across models/tasks.
+    same = (m.get("model") == ref_data["meta"].get("model")
+            and m.get("classes") == ref_data["meta"].get("classes"))
+    if name != ref_name and same:
         a = agreement(ref_data, data)
         row["mean_iou_vs_ref"] = a["mean_iou"]
         row["mean_drift_px_vs_ref"] = a["mean_drift_px"]
@@ -117,6 +121,8 @@ def main():
 
     def cell(r, c):
         v = r[c]
+        if v is None:
+            return "-"
         if c == "hit_rate" and isinstance(v, float):
             return f"{v:.0%}"
         return str(v)

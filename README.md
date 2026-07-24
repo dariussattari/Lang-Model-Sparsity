@@ -15,8 +15,9 @@ LM_Compression/
     compare.py           # diff two runs (size / latency / hit-rate / IoU / drift)
     summarize_runs.py    # one model's runs -> table (per quant level)
     cross_model_report.py# deltas BETWEEN models, per quant level
-  paligemma/         # model dir: runner + own venv (transformers 5.x) + runs/
-  locateanything/    # model dir: runner + own venv (transformers 4.57 + remote code)
+  paligemma/         # VLM: runner + own venv (transformers 5.x) + runs/
+  locateanything/    # VLM: runner + own venv (transformers 4.57 + remote code)
+  yolo/              # CNN detectors (YOLO / YOLO-World) + own venv + runs/
   Lit_Review/
 ```
 
@@ -33,11 +34,29 @@ the analysis layer needs no changes.
 
 | Dir | Model | Notes |
 | --- | --- | --- |
-| `paligemma/` | google/paligemma2-3b-mix-448 | native `detect` prompt, `<loc>` tokens |
-| `locateanything/` | nvidia/LocateAnything-3B | Qwen2.5+MoonViT, `trust_remote_code`, `<box>` tokens |
+| `paligemma/` | google/paligemma2-3b-mix-448 | VLM; native `detect` prompt, `<loc>` tokens |
+| `locateanything/` | nvidia/LocateAnything-3B | VLM; Qwen2.5+MoonViT, `trust_remote_code`, `<box>` tokens |
+| `yolo/` | yolo11n, yolov8s-worldv2 | CNN; closed COCO + open-vocab (YOLO-World), no login |
 
-Both are gated — accept each model's license on Hugging Face and `hf auth login`
-before first use.
+The two VLMs are gated — accept each model's license on Hugging Face and
+`hf auth login` before first use. The YOLO weights are open (auto-download).
+
+## Headline finding across families
+
+At matched task (detecting the quadcopter in one video, MPS):
+
+| Family | Model | Size | Latency/frame | Detects drone? |
+| --- | --- | --- | --- | --- |
+| VLM | PaliGemma-2-3B | 5.65 GB | 1.1 s | yes, 94% |
+| VLM | LocateAnything-3B | 7.12 GB | 4.3 s | yes, 94% |
+| CNN | YOLO-World-s | 0.61 GB | 0.03 s | **no, ~6%** |
+| CNN | yolo11n (COCO) | 0.01 GB | 0.04 s | n/a (no drone class) |
+
+The CNNs are ~30–150× faster and far smaller, but can't detect this drone —
+exactly the fast-path/slow-path tension the project's cascade is built around.
+And naive quant behaves oppositely by family: the big VLMs shrug off int8 (94%
+→ 94%), while quanto int8/int4 **destroys** yolo11n (94% → 0%) because compact
+CNNs have no redundancy to spare. See each model's `runs/summary.md`.
 
 ## Reproduce
 

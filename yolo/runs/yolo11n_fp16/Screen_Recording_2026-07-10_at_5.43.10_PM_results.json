@@ -1,0 +1,1118 @@
+{
+  "meta": {
+    "model": "yolo11n.pt",
+    "quant": "none",
+    "model_footprint_gb": 0.0098,
+    "device": "mps",
+    "classes": [
+      "person"
+    ],
+    "quantized_layers": 0,
+    "conf_threshold": 0.25,
+    "video": "/Users/dariussattari/Desktop/Screen Recording 2026-07-10 at 5.43.10\u202fPM.mov",
+    "fps": 24.87,
+    "resolution": [
+      506,
+      894
+    ],
+    "detect_every_s": 1.0,
+    "run_started_utc": "2026-07-24T14:26:58Z"
+  },
+  "summary": {
+    "n_passes": 34,
+    "n_passes_with_detections": 32,
+    "n_detections": 63,
+    "avg_latency_s": 0.0414
+  },
+  "passes": [
+    {
+      "pass": 0,
+      "frame": 0,
+      "timestamp_s": 0.0,
+      "latency_s": 0.8126,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            320.9,
+            529.8,
+            503.7,
+            683.9
+          ],
+          "centroid": [
+            412.3,
+            606.8
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            161.1,
+            633.6,
+            270.4,
+            892.6
+          ],
+          "centroid": [
+            215.8,
+            763.1
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 1,
+      "frame": 25,
+      "timestamp_s": 1.005,
+      "latency_s": 0.023,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            165.8,
+            522.4,
+            505.9,
+            891.6
+          ],
+          "centroid": [
+            335.8,
+            707.0
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            320.5,
+            530.2,
+            503.7,
+            685.5
+          ],
+          "centroid": [
+            412.1,
+            607.8
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            160.2,
+            632.5,
+            270.7,
+            892.1
+          ],
+          "centroid": [
+            215.4,
+            762.3
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 2,
+      "frame": 50,
+      "timestamp_s": 2.01,
+      "latency_s": 0.0165,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            165.8,
+            522.4,
+            505.9,
+            891.6
+          ],
+          "centroid": [
+            335.9,
+            707.0
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            320.4,
+            530.2,
+            503.7,
+            685.4
+          ],
+          "centroid": [
+            412.1,
+            607.8
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            160.3,
+            632.4,
+            270.6,
+            892.1
+          ],
+          "centroid": [
+            215.5,
+            762.3
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 3,
+      "frame": 75,
+      "timestamp_s": 3.015,
+      "latency_s": 0.0216,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            165.7,
+            523.6,
+            505.9,
+            891.7
+          ],
+          "centroid": [
+            335.8,
+            707.6
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            320.1,
+            530.2,
+            503.7,
+            685.1
+          ],
+          "centroid": [
+            411.9,
+            607.7
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 4,
+      "frame": 100,
+      "timestamp_s": 4.02,
+      "latency_s": 0.0178,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            165.6,
+            522.6,
+            505.9,
+            891.7
+          ],
+          "centroid": [
+            335.7,
+            707.1
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            320.1,
+            530.1,
+            503.7,
+            685.3
+          ],
+          "centroid": [
+            411.9,
+            607.7
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 5,
+      "frame": 125,
+      "timestamp_s": 5.025,
+      "latency_s": 0.021,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            164.5,
+            535.9,
+            504.3,
+            892.4
+          ],
+          "centroid": [
+            334.4,
+            714.1
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            310.8,
+            547.3,
+            503.7,
+            711.9
+          ],
+          "centroid": [
+            407.3,
+            629.6
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            158.7,
+            659.6,
+            269.9,
+            893.6
+          ],
+          "centroid": [
+            214.3,
+            776.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 6,
+      "frame": 150,
+      "timestamp_s": 6.03,
+      "latency_s": 0.0178,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            303.6,
+            581.2,
+            503.4,
+            765.1
+          ],
+          "centroid": [
+            403.5,
+            673.2
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            150.3,
+            567.0,
+            504.3,
+            891.4
+          ],
+          "centroid": [
+            327.3,
+            729.2
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 7,
+      "frame": 175,
+      "timestamp_s": 7.036,
+      "latency_s": 0.0143,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            113.6,
+            514.8,
+            505.4,
+            893.0
+          ],
+          "centroid": [
+            309.5,
+            703.9
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            276.6,
+            519.4,
+            504.5,
+            744.4
+          ],
+          "centroid": [
+            390.5,
+            631.9
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 8,
+      "frame": 200,
+      "timestamp_s": 8.041,
+      "latency_s": 0.0151,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            144.4,
+            518.4,
+            506.0,
+            892.7
+          ],
+          "centroid": [
+            325.2,
+            705.6
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            276.7,
+            520.1,
+            504.7,
+            776.7
+          ],
+          "centroid": [
+            390.7,
+            648.4
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            272.6,
+            521.0,
+            504.5,
+            887.2
+          ],
+          "centroid": [
+            388.6,
+            704.1
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 9,
+      "frame": 225,
+      "timestamp_s": 9.046,
+      "latency_s": 0.0171,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            283.9,
+            510.6,
+            504.2,
+            781.0
+          ],
+          "centroid": [
+            394.1,
+            645.8
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            145.5,
+            621.9,
+            376.0,
+            892.9
+          ],
+          "centroid": [
+            260.8,
+            757.4
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 10,
+      "frame": 250,
+      "timestamp_s": 10.051,
+      "latency_s": 0.0134,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            295.5,
+            485.6,
+            503.6,
+            751.5
+          ],
+          "centroid": [
+            399.6,
+            618.6
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            178.6,
+            460.6,
+            504.4,
+            889.3
+          ],
+          "centroid": [
+            341.5,
+            674.9
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 11,
+      "frame": 275,
+      "timestamp_s": 11.056,
+      "latency_s": 0.0124,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            204.1,
+            496.1,
+            506.0,
+            893.0
+          ],
+          "centroid": [
+            355.0,
+            694.6
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            315.8,
+            494.4,
+            505.1,
+            715.3
+          ],
+          "centroid": [
+            410.4,
+            604.8
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 12,
+      "frame": 300,
+      "timestamp_s": 12.061,
+      "latency_s": 0.0173,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            331.3,
+            472.0,
+            503.1,
+            676.9
+          ],
+          "centroid": [
+            417.2,
+            574.4
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 13,
+      "frame": 325,
+      "timestamp_s": 13.066,
+      "latency_s": 0.0197,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            213.5,
+            608.4,
+            505.6,
+            893.4
+          ],
+          "centroid": [
+            359.5,
+            750.9
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            309.7,
+            605.7,
+            504.2,
+            757.1
+          ],
+          "centroid": [
+            407.0,
+            681.4
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            214.2,
+            647.1,
+            317.0,
+            893.4
+          ],
+          "centroid": [
+            265.6,
+            770.2
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 14,
+      "frame": 350,
+      "timestamp_s": 14.071,
+      "latency_s": 0.0188,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            266.6,
+            609.0,
+            505.3,
+            893.4
+          ],
+          "centroid": [
+            385.9,
+            751.2
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            386.3,
+            608.4,
+            503.7,
+            761.7
+          ],
+          "centroid": [
+            445.0,
+            685.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 15,
+      "frame": 375,
+      "timestamp_s": 15.076,
+      "latency_s": 0.0177,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            262.3,
+            587.1,
+            504.5,
+            893.2
+          ],
+          "centroid": [
+            383.4,
+            740.1
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            389.5,
+            585.9,
+            503.7,
+            744.1
+          ],
+          "centroid": [
+            446.6,
+            665.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 16,
+      "frame": 400,
+      "timestamp_s": 16.081,
+      "latency_s": 0.0164,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            165.0,
+            602.2,
+            505.2,
+            893.3
+          ],
+          "centroid": [
+            335.1,
+            747.8
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 17,
+      "frame": 425,
+      "timestamp_s": 17.086,
+      "latency_s": 0.0155,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            169.5,
+            596.2,
+            505.7,
+            893.0
+          ],
+          "centroid": [
+            337.6,
+            744.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 18,
+      "frame": 450,
+      "timestamp_s": 18.091,
+      "latency_s": 0.0144,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            123.7,
+            568.2,
+            504.7,
+            892.9
+          ],
+          "centroid": [
+            314.2,
+            730.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 19,
+      "frame": 475,
+      "timestamp_s": 19.096,
+      "latency_s": 0.0125,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            112.0,
+            568.9,
+            504.8,
+            892.7
+          ],
+          "centroid": [
+            308.4,
+            730.8
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 20,
+      "frame": 500,
+      "timestamp_s": 20.102,
+      "latency_s": 0.0138,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            161.1,
+            529.8,
+            504.2,
+            891.3
+          ],
+          "centroid": [
+            332.7,
+            710.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 21,
+      "frame": 525,
+      "timestamp_s": 21.107,
+      "latency_s": 0.0178,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            161.5,
+            535.0,
+            504.3,
+            891.5
+          ],
+          "centroid": [
+            332.9,
+            713.3
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            309.3,
+            556.9,
+            503.5,
+            726.0
+          ],
+          "centroid": [
+            406.4,
+            641.5
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 22,
+      "frame": 550,
+      "timestamp_s": 22.112,
+      "latency_s": 0.0184,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            161.5,
+            537.3,
+            504.2,
+            891.5
+          ],
+          "centroid": [
+            332.9,
+            714.4
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            309.5,
+            556.8,
+            503.5,
+            726.3
+          ],
+          "centroid": [
+            406.5,
+            641.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 23,
+      "frame": 575,
+      "timestamp_s": 23.117,
+      "latency_s": 0.0163,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            118.2,
+            403.9,
+            505.8,
+            675.4
+          ],
+          "centroid": [
+            312.0,
+            539.6
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            121.2,
+            865.1,
+            144.4,
+            893.6
+          ],
+          "centroid": [
+            132.8,
+            879.4
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 24,
+      "frame": 600,
+      "timestamp_s": 24.122,
+      "latency_s": 0.0551,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            121.3,
+            865.0,
+            143.7,
+            893.6
+          ],
+          "centroid": [
+            132.5,
+            879.3
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 25,
+      "frame": 625,
+      "timestamp_s": 25.127,
+      "latency_s": 0.0184,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            157.2,
+            531.5,
+            500.8,
+            883.0
+          ],
+          "centroid": [
+            329.0,
+            707.2
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            306.0,
+            550.7,
+            499.4,
+            717.8
+          ],
+          "centroid": [
+            402.7,
+            634.3
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            158.5,
+            412.4,
+            500.3,
+            852.5
+          ],
+          "centroid": [
+            329.4,
+            632.4
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 26,
+      "frame": 650,
+      "timestamp_s": 26.132,
+      "latency_s": 0.0127,
+      "detections": []
+    },
+    {
+      "pass": 27,
+      "frame": 675,
+      "timestamp_s": 27.137,
+      "latency_s": 0.0133,
+      "detections": []
+    },
+    {
+      "pass": 28,
+      "frame": 700,
+      "timestamp_s": 28.142,
+      "latency_s": 0.0251,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            378.1,
+            544.9,
+            506.0,
+            844.5
+          ],
+          "centroid": [
+            442.0,
+            694.7
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            378.3,
+            615.1,
+            475.5,
+            844.1
+          ],
+          "centroid": [
+            426.9,
+            729.6
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 29,
+      "frame": 725,
+      "timestamp_s": 29.147,
+      "latency_s": 0.0219,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            174.5,
+            550.5,
+            506.0,
+            886.3
+          ],
+          "centroid": [
+            340.3,
+            718.4
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            326.6,
+            556.5,
+            505.1,
+            715.5
+          ],
+          "centroid": [
+            415.9,
+            636.0
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            175.1,
+            623.0,
+            285.7,
+            887.0
+          ],
+          "centroid": [
+            230.4,
+            755.0
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 30,
+      "frame": 750,
+      "timestamp_s": 30.152,
+      "latency_s": 0.0174,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            161.3,
+            533.8,
+            504.2,
+            891.4
+          ],
+          "centroid": [
+            332.8,
+            712.6
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            309.3,
+            556.9,
+            503.5,
+            726.1
+          ],
+          "centroid": [
+            406.4,
+            641.5
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 31,
+      "frame": 775,
+      "timestamp_s": 31.157,
+      "latency_s": 0.0168,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            161.5,
+            536.1,
+            504.2,
+            891.5
+          ],
+          "centroid": [
+            332.8,
+            713.8
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            309.4,
+            556.9,
+            503.4,
+            726.1
+          ],
+          "centroid": [
+            406.4,
+            641.5
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 32,
+      "frame": 800,
+      "timestamp_s": 32.162,
+      "latency_s": 0.0127,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            161.5,
+            536.2,
+            504.2,
+            891.5
+          ],
+          "centroid": [
+            332.9,
+            713.9
+          ]
+        },
+        {
+          "label": "person",
+          "box": [
+            309.3,
+            556.8,
+            503.4,
+            726.2
+          ],
+          "centroid": [
+            406.4,
+            641.5
+          ]
+        }
+      ]
+    },
+    {
+      "pass": 33,
+      "frame": 825,
+      "timestamp_s": 33.168,
+      "latency_s": 0.0127,
+      "detections": [
+        {
+          "label": "person",
+          "box": [
+            161.2,
+            529.5,
+            504.4,
+            892.0
+          ],
+          "centroid": [
+            332.8,
+            710.8
+          ]
+        }
+      ]
+    }
+  ]
+}

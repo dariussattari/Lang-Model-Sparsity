@@ -61,9 +61,12 @@ with vision-native reference code.
   `compare.py` (two runs), `summarize_runs.py` (one model), `cross_model_report.py`
   (deltas between models). `RESULTS_SCHEMA.md` documents the JSON contract that makes
   this model-agnostic.
-- `paligemma/` — model dir: `detect.py` runner + own venv (transformers 5.x) + `runs/`.
-- `locateanything/` — model dir: `detect.py` runner + own venv (transformers 4.57 +
+- `paligemma/` — VLM dir: `detect.py` runner + own venv (transformers 5.x) + `runs/`.
+- `locateanything/` — VLM dir: `detect.py` runner + own venv (transformers 4.57 +
   `trust_remote_code`) + `runs/`.
+- `yolo/` — CNN dir (YOLO / YOLO-World): `detect.py` + own venv (ultralytics) +
+  `runs/`. Substrate for the CNN research track (torch.prune / GradCAM / calibrated
+  PTQ instead of SAEs).
 - Top-level `README.md` — the design and how to reproduce.
 
 The design deliberately separates a model-neutral analysis layer from per-model
@@ -144,6 +147,12 @@ PaliGemma-2-3B-mix-448:
 
 LocateAnything-3B: fp16 = 7.115 GB, ~4.3 s/pass (int8/int4 rows land in
 `analysis/cross_model.md`).
+
+YOLO (CNN, `yolo/runs/summary.md`): yolo11n fp16 = 9.8 MB, 94% on *person* (COCO
+has no drone class), **41 ms/pass** — ~30× faster than the VLMs. quanto int8/int4
+shrinks it ~74% but detection **collapses to 0%** — naive weight-only quant
+destroys compact CNNs (they need calibrated PTQ/QAT). YOLO-World-s (open-vocab)
+gets only ~6% on the quadcopter — small CNNs can't do this drone; the VLMs can.
 
 Takeaways that shape the research: (1) **int8 is the sweet spot** — ~40% smaller,
 zero accuracy loss, boxes nearly identical (IoU 0.97). (2) **int4 via quanto is

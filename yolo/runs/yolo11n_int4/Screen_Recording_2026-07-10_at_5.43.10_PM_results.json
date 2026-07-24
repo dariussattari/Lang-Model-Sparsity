@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "model": "yolo11n.pt",
+    "quant": "int4",
+    "model_footprint_gb": 0.0027,
+    "device": "mps",
+    "classes": [
+      "person"
+    ],
+    "quantized_layers": 88,
+    "conf_threshold": 0.25,
+    "video": "/Users/dariussattari/Desktop/Screen Recording 2026-07-10 at 5.43.10\u202fPM.mov",
+    "fps": 24.87,
+    "resolution": [
+      506,
+      894
+    ],
+    "detect_every_s": 1.0,
+    "run_started_utc": "2026-07-24T14:27:10Z"
+  },
+  "summary": {
+    "n_passes": 34,
+    "n_passes_with_detections": 0,
+    "n_detections": 0,
+    "avg_latency_s": 0.1866
+  },
+  "passes": [
+    {
+      "pass": 0,
+      "frame": 0,
+      "timestamp_s": 0.0,
+      "latency_s": 1.1678,
+      "detections": []
+    },
+    {
+      "pass": 1,
+      "frame": 25,
+      "timestamp_s": 1.005,
+      "latency_s": 0.1258,
+      "detections": []
+    },
+    {
+      "pass": 2,
+      "frame": 50,
+      "timestamp_s": 2.01,
+      "latency_s": 0.1249,
+      "detections": []
+    },
+    {
+      "pass": 3,
+      "frame": 75,
+      "timestamp_s": 3.015,
+      "latency_s": 0.1271,
+      "detections": []
+    },
+    {
+      "pass": 4,
+      "frame": 100,
+      "timestamp_s": 4.02,
+      "latency_s": 0.1263,
+      "detections": []
+    },
+    {
+      "pass": 5,
+      "frame": 125,
+      "timestamp_s": 5.025,
+      "latency_s": 0.1252,
+      "detections": []
+    },
+    {
+      "pass": 6,
+      "frame": 150,
+      "timestamp_s": 6.03,
+      "latency_s": 0.1184,
+      "detections": []
+    },
+    {
+      "pass": 7,
+      "frame": 175,
+      "timestamp_s": 7.036,
+      "latency_s": 0.1325,
+      "detections": []
+    },
+    {
+      "pass": 8,
+      "frame": 200,
+      "timestamp_s": 8.041,
+      "latency_s": 0.1323,
+      "detections": []
+    },
+    {
+      "pass": 9,
+      "frame": 225,
+      "timestamp_s": 9.046,
+      "latency_s": 0.1271,
+      "detections": []
+    },
+    {
+      "pass": 10,
+      "frame": 250,
+      "timestamp_s": 10.051,
+      "latency_s": 0.1237,
+      "detections": []
+    },
+    {
+      "pass": 11,
+      "frame": 275,
+      "timestamp_s": 11.056,
+      "latency_s": 0.1246,
+      "detections": []
+    },
+    {
+      "pass": 12,
+      "frame": 300,
+      "timestamp_s": 12.061,
+      "latency_s": 0.1338,
+      "detections": []
+    },
+    {
+      "pass": 13,
+      "frame": 325,
+      "timestamp_s": 13.066,
+      "latency_s": 0.1241,
+      "detections": []
+    },
+    {
+      "pass": 14,
+      "frame": 350,
+      "timestamp_s": 14.071,
+      "latency_s": 0.1218,
+      "detections": []
+    },
+    {
+      "pass": 15,
+      "frame": 375,
+      "timestamp_s": 15.076,
+      "latency_s": 0.1234,
+      "detections": []
+    },
+    {
+      "pass": 16,
+      "frame": 400,
+      "timestamp_s": 16.081,
+      "latency_s": 0.154,
+      "detections": []
+    },
+    {
+      "pass": 17,
+      "frame": 425,
+      "timestamp_s": 17.086,
+      "latency_s": 0.1515,
+      "detections": []
+    },
+    {
+      "pass": 18,
+      "frame": 450,
+      "timestamp_s": 18.091,
+      "latency_s": 0.1428,
+      "detections": []
+    },
+    {
+      "pass": 19,
+      "frame": 475,
+      "timestamp_s": 19.096,
+      "latency_s": 0.1236,
+      "detections": []
+    },
+    {
+      "pass": 20,
+      "frame": 500,
+      "timestamp_s": 20.102,
+      "latency_s": 0.1373,
+      "detections": []
+    },
+    {
+      "pass": 21,
+      "frame": 525,
+      "timestamp_s": 21.107,
+      "latency_s": 0.1314,
+      "detections": []
+    },
+    {
+      "pass": 22,
+      "frame": 550,
+      "timestamp_s": 22.112,
+      "latency_s": 0.1327,
+      "detections": []
+    },
+    {
+      "pass": 23,
+      "frame": 575,
+      "timestamp_s": 23.117,
+      "latency_s": 0.1287,
+      "detections": []
+    },
+    {
+      "pass": 24,
+      "frame": 600,
+      "timestamp_s": 24.122,
+      "latency_s": 0.1886,
+      "detections": []
+    },
+    {
+      "pass": 25,
+      "frame": 625,
+      "timestamp_s": 25.127,
+      "latency_s": 0.2046,
+      "detections": []
+    },
+    {
+      "pass": 26,
+      "frame": 650,
+      "timestamp_s": 26.132,
+      "latency_s": 0.2324,
+      "detections": []
+    },
+    {
+      "pass": 27,
+      "frame": 675,
+      "timestamp_s": 27.137,
+      "latency_s": 0.2276,
+      "detections": []
+    },
+    {
+      "pass": 28,
+      "frame": 700,
+      "timestamp_s": 28.142,
+      "latency_s": 0.2239,
+      "detections": []
+    },
+    {
+      "pass": 29,
+      "frame": 725,
+      "timestamp_s": 29.147,
+      "latency_s": 0.2321,
+      "detections": []
+    },
+    {
+      "pass": 30,
+      "frame": 750,
+      "timestamp_s": 30.152,
+      "latency_s": 0.228,
+      "detections": []
+    },
+    {
+      "pass": 31,
+      "frame": 775,
+      "timestamp_s": 31.157,
+      "latency_s": 0.2313,
+      "detections": []
+    },
+    {
+      "pass": 32,
+      "frame": 800,
+      "timestamp_s": 32.162,
+      "latency_s": 0.208,
+      "detections": []
+    },
+    {
+      "pass": 33,
+      "frame": 825,
+      "timestamp_s": 33.168,
+      "latency_s": 0.2086,
+      "detections": []
+    }
+  ]
+}
