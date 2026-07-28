@@ -4,6 +4,8 @@ drone_yolov8x_int8,quant int8 (no prune),0.064,34,34,1.0,0.259,222.7,71.4,0.0,0.
 drone_yolov8x_prune25,"prune 25%, no recovery",0.1521,0,34,0.0,,,31.4,40.2,38.0
 drone_yolov8x_prune50,"prune 50%, no recovery",0.0776,0,34,0.0,,,18.9,69.5,65.8
 drone_yolov8x_prune75,"prune 75%, no recovery",0.0308,0,34,0.0,,,12.7,87.9,83.5
-drone_yolov8x_prune50_ft,prune 50% + recovery,0.0776,25,34,0.735,0.93,10.0,19.9,69.5,65.8
-drone_yolov8x_prune75_ft,prune 75% + recovery,0.0308,24,34,0.706,0.925,10.5,14.0,87.9,83.5
+drone_yolov8x_prune50_ft,prune 50% + recovery (close),0.0776,25,34,0.735,0.93,10.0,19.9,69.5,65.8
+drone_yolov8x_prune75_ft,prune 75% + recovery (close),0.0308,24,34,0.706,0.925,10.5,14.0,87.9,83.5
+drone_yolov8x_prune50_ft_far,prune 50% + recovery (near+far),0.0776,25,34,0.735,0.925,10.0,19.6,0.0,0.0
+drone_yolov8x_prune75_ft_far,prune 75% + recovery (near+far),0.0308,26,34,0.765,0.93,9.6,18.0,87.9,83.5
 drone_yolov8x_prune50_ft_int8,prune 50% + recovery + int8,0.0196,34,34,1.0,0.281,199.8,32.7,69.5,65.8

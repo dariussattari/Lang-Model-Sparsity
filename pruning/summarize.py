@@ -47,8 +47,10 @@ ORDER = [
     ("drone_yolov8x_prune25",         "prune 25%, no recovery",         "prune"),
     ("drone_yolov8x_prune50",         "prune 50%, no recovery",         "prune"),
     ("drone_yolov8x_prune75",         "prune 75%, no recovery",         "prune"),
-    ("drone_yolov8x_prune50_ft",      "prune 50% + recovery",           "prune_ft"),
-    ("drone_yolov8x_prune75_ft",      "prune 75% + recovery",           "prune_ft"),
+    ("drone_yolov8x_prune50_ft",      "prune 50% + recovery (close)",   "prune_ft"),
+    ("drone_yolov8x_prune75_ft",      "prune 75% + recovery (close)",   "prune_ft"),
+    ("drone_yolov8x_prune50_ft_far",  "prune 50% + recovery (near+far)", "prune_far"),
+    ("drone_yolov8x_prune75_ft_far",  "prune 75% + recovery (near+far)", "prune_far"),
     ("drone_yolov8x_prune50_ft_int8", "prune 50% + recovery + int8",    "combo"),
 ]
 
@@ -120,7 +122,7 @@ def make_chart(rows):
     import matplotlib.pyplot as plt
 
     colors = {"base": "#4c72b0", "quant": "#dd8452", "prune": "#c44e52",
-              "prune_ft": "#55a868", "combo": "#8172b3"}
+              "prune_ft": "#55a868", "prune_far": "#2e7031", "combo": "#8172b3"}
     labels = [r["label"] for r in rows]
     y = range(len(rows))
     cols = [colors[r["cat"]] for r in rows]

@@ -23,6 +23,8 @@ yolo/detections/
 
 # pruning experiment: regenerable dataset, source footage, logs, training dumps
 pruning/dataset/
+pruning/dataset_far/
+pruning/seraphim/
 pruning/quadcopter.mov
 pruning/*.log
 pruning/reference_yolov8_pruning.py

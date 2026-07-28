@@ -44,43 +44,58 @@ def main():
     ap.add_argument("--conf", type=float, default=0.25)
     ap.add_argument("--every", type=float, default=1.0)
     ap.add_argument("--quant-after", choices=["none", "int8", "int4"], default="none")
+    ap.add_argument("--data", default=DATA, help="dataset yaml to train on")
     ap.add_argument("--from-weights", default=None,
                     help="skip training: load an already-recovered .pt, then quant+benchmark")
+    ap.add_argument("--init-from", default=None,
+                    help="warm-start: load an existing pruned .pt and continue training on --data")
+    ap.add_argument("--lr0", type=float, default=1e-3)
     ap.add_argument("--device", default=None, help="override device (mps/cpu)")
+    ap.add_argument("--tag", default=None, help="override the run tag/name")
     ap.add_argument("--run-name", default=None)
     args = ap.parse_args()
 
     dev = args.device or bench.pick_device()
-    print(f"device={dev} ratio={args.ratio} epochs={args.epochs} from={args.from_weights}")
+    print(f"device={dev} ratio={args.ratio} epochs={args.epochs} data={args.data} "
+          f"init_from={args.init_from} from_weights={args.from_weights}")
 
-    if args.from_weights:
-        # reuse a recovered model (C2f_v2 resolvable because prune_lib is imported)
+    def load_pruned(pt):
         import prune_lib as _  # noqa: keep C2f_v2 importable for unpickling
-        ckpt = torch.load(args.from_weights, map_location=dev, weights_only=False)
-        y = YOLO(BASE)  # gives us a YOLO wrapper; swap in the recovered module
-        y.model = ckpt["model"].to(dev).float().eval()
+        ckpt = torch.load(pt, map_location=dev, weights_only=False)
+        # ultralytics stores the deployable net under 'model', but an interrupted
+        # run leaves 'model' None with the weights in 'ema'.
+        mod = ckpt.get("model") or ckpt.get("ema")
+        y = YOLO(BASE)  # YOLO wrapper; swap in the pruned/recovered module
+        y.model = mod.to(dev).float().eval()
         y.model.names = ckpt.get("names", {0: "drone"})
-        stats = ckpt.get("prune_stats", {"target_channel_ratio": args.ratio})
-    else:
-        y = YOLO(BASE)
-        y.model.to(dev).eval()
-        stats = prune_lib.prune_model(y, args.ratio, imgsz=args.imgsz, device=dev)
-        print(f"pruned: params -{stats['params_reduction_pct']}%  MACs -{stats['macs_reduction_pct']}%")
+        return y, ckpt.get("prune_stats", {"target_channel_ratio": args.ratio})
 
-        # ---- recover ----
-        # the downloaded checkpoint carries a stale v8DetectionLoss pinned to CUDA;
-        # drop it so ultralytics rebuilds the criterion on this machine's device.
+    if args.from_weights:                       # quant-only, no training
+        y, stats = load_pruned(args.from_weights)
+    else:
+        if args.init_from:                      # warm-start from an existing pruned model
+            y, stats = load_pruned(args.init_from)
+            print(f"warm-start from {args.init_from} (params -{stats.get('params_reduction_pct','?')}%)")
+        else:                                   # prune fresh from base
+            y = YOLO(BASE)
+            y.model.to(dev).eval()
+            stats = prune_lib.prune_model(y, args.ratio, imgsz=args.imgsz, device=dev)
+            print(f"pruned: params -{stats['params_reduction_pct']}%  MACs -{stats['macs_reduction_pct']}%")
+
+        # ---- (re)cover ----
+        # the checkpoint carries a stale v8DetectionLoss pinned to CUDA; drop it so
+        # ultralytics rebuilds the criterion on this machine's device.
         y.model.criterion = None
         Trainer = pruned_trainer_for(y.model)
-        y.train(trainer=Trainer, data=DATA, epochs=args.epochs, imgsz=args.imgsz,
+        y.train(trainer=Trainer, data=args.data, epochs=args.epochs, imgsz=args.imgsz,
                 batch=args.batch, device=dev, project=str(Path("runs/_train").resolve()),
                 name=f"prune{int(round(args.ratio*100))}", exist_ok=True,
-                optimizer="AdamW", lr0=1e-3, cache=False, workers=4, verbose=False,
+                optimizer="AdamW", lr0=args.lr0, cache=False, workers=4, verbose=False,
                 plots=False, val=True, amp=False)
         # after training, y.model is the recovered model (float32)
         y.model.to(dev).float().eval()
 
-    tag = f"drone_yolov8x_prune{int(round(args.ratio*100))}_ft"
+    tag = args.tag or f"drone_yolov8x_prune{int(round(args.ratio*100))}_ft"
     n_q = 0
     if args.quant_after != "none":
         from optimum.quanto import quantize, freeze, qint8, qint4
