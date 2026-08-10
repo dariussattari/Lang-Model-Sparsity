@@ -1,0 +1,16 @@
+{
+  "run_name": "drone_yolov8x_prune50_ft_far",
+  "ratio": 0.5,
+  "quant": "none",
+  "recovered": true,
+  "epochs": 40,
+  "footprint_gb": 0.0776,
+  "n_passes": 34,
+  "hit": 25,
+  "hit_rate": 0.735,
+  "avg_latency_s": 0.0196,
+  "pruning": {
+    "target_channel_ratio": 0.5,
+    "weights_mb": 79.86
+  }
+}

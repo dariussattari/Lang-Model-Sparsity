@@ -21,5 +21,14 @@ yolo/detections/
 # Regenerable annotated videos (the results JSON/CSV are the real artifacts)
 *_annotated.mp4
 
+# pruning experiment: regenerable dataset, source footage, logs, training dumps
+pruning/dataset/
+pruning/dataset_far/
+pruning/seraphim/
+pruning/quadcopter.mov
+pruning/*.log
+pruning/reference_yolov8_pruning.py
+pruning/runs/_train/
+
 # OS cruft
 .DS_Store
